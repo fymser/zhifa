@@ -1,6 +1,6 @@
 # 程序员植发优惠
 
-**微信扫码体验
+**微信扫码体验**
 
 <p align="center"><img src="tiyan.jpg" /></p>
 
