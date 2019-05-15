@@ -1,6 +1,6 @@
 # 程序员植发优惠 Demo
 
-<p align="center"><img src="../read/yemian.gif" /></p>
+<p align="center"><img src="../yemian.gif" /></p>
 
 5月青年专属月，植发优惠活动
 
