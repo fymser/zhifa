@@ -68,27 +68,31 @@ Page({
   },
   //通过绑定手机号登录
 
-  getPhoneNumber: function (e) {
+  getPhoneNumber: function(e) {
 
-    console.log(e);
+    // console.log(e);
     var ivObj = e.detail.iv
     var telObj = e.detail.encryptedData
     var codeObj = "";
     var that = this;
 
     //提示信息
-    wx.showToast({ title: "提交中...", icon: 'success', duration: 800, })
+    wx.showToast({
+      title: "提交中...",
+      icon: 'success',
+      duration: 800,
+    })
     //执行Login
     wx.login({
       success: res => {
-        console.log('code转换', res.code);
+        // console.log('code转换', res.code);
         //用code传给服务器调换session_key
         wx.request({
 
           url: 'https://bd.zhifa999.com/demo/getPhone.php', //接口请求地址，存放微信手机号解密文件的地址
           data: {
-            appid: "wxcfe31278ee7e4b9c", //小程序appid，登录微信公众号后台查看
-            secret: "ee41cfc5e0ca06ca4a770db936d526b6", //小程序secret，登录微信公众号后台可查看
+            appid: "wx219816b6505bf762", //小程序appid，登录微信公众号后台查看
+            secret: "366cea1baaa9832e30adbf7c67953b68", //小程序secret，登录微信公众号后台可查看
             code: res.code,
             encryptedData: telObj,
             iv: ivObj
@@ -97,9 +101,9 @@ Page({
             'content-type': 'application/json' // 默认值
           },
           //成功返回数据
-          success: function (res) {
-            console.log(res);
-            phoneObj = res.data.phoneNumber;
+          success: function(res) {
+            // console.log(res);
+            const phoneObj = res.data.phoneNumber;
             //存储数据并准备发送给下一页使用
             wx.setStorage({
               key: "phoneObj",
@@ -111,7 +115,7 @@ Page({
             if (phonenum != '') {
 
               //2秒后执行               
-              setTimeout(function () {
+              setTimeout(function() {
 
                 //手机号发送至后台
                 wx.request({
@@ -121,7 +125,7 @@ Page({
                   data: {
                     //myphonenum是获取到的手机号 do，diyid，dede_fields，dede_fieldshash都是织梦生成自定义表单默认的参数，不可缺少，需要作为参数一起提交，实际的参数值需要在自定义完表单后查看生成的表单模板
                     input: phonenum,
-                    diyid: '18',
+                    diyid: '21',
                     do: '2',
                     type: 'wx1',
                     wx_fields: 'myphonenum,text;addtime,text',
@@ -134,8 +138,8 @@ Page({
                   //提交方式
                   method: "POST",
                   dataType: 'json',
-                  success: function (res) {
-                    console.log(res);
+                  success: function(res) {
+                    // console.log(res);
 
                   }
                 })
@@ -143,10 +147,13 @@ Page({
 
               //弹出提示
               wx.showModal({
-                title: '恭喜：' + phonenum, content: '您成功领取了优惠券',
-                success: function (res) {
-                  if (res.confirm) { console.log('确定') }
-                  else if (res.cancel) { console.log('取消') }
+                 title: '恭喜：' + phonenum +"获取方案 ", content: '稍后将会有工作人员联系您',
+                success: function(res) {
+                  if (res.confirm) {
+                    console.log('确定')
+                  } else if (res.cancel) {
+                    console.log('取消')
+                  }
                 }
               })
 
