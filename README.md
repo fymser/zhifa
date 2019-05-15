@@ -1,5 +1,7 @@
 # 程序员植发优惠
 
+微信扫码体验
+
 <p align="center"><img src="tiyan.jpg" /></p>
 
 5月青年专属月，健康免费回馈
