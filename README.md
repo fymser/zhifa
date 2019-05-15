@@ -1,6 +1,6 @@
 # 程序员植发优惠
 
-<p align="center"><img src="yemian.gif" /></p>
+<p align="center"><img src="tiyan.jpg" /></p>
 
 5月青年专属月，健康免费回馈
 
@@ -37,5 +37,6 @@ Star本项目即享植发优惠，最高可享8折、到院问诊预防治疗，
 
 20年如一日，我们只专注植发
 
+<p align="center"><img src="yemian.gif" /></p>
 
 **雍禾植发，专业垂直植发行业20年已服务发友超15W+**
