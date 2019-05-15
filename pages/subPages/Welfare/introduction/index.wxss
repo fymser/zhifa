@@ -1,0 +1,9 @@
+/* pages/subPages/Welfare/introduction/index.wxss */
+.container{
+  width: 100%;
+  height: 100%;
+  background: #67a3fb;
+}
+.container image{
+  width:100%;
+}

@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Welfare/index",
+    "pages/mine/mine",
+    "pages/subPages/index/001/index",
+    "pages/subPages/index/002/index",
+    "pages/subPages/index/003/index",
+    "pages/subPages/index/004/index",
+    "pages/subPages/index/005/index",
+    "pages/subPages/index/006/index",
+    "pages/subPages/index/007/index",
+    "pages/subPages/index/008/index",
+    "pages/subPages/Welfare/case/index",
+    "pages/subPages/Welfare/introduction/index",
+    "pages/subPages/Welfare/project/index",
+    "pages/subPages/Welfare/online/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#467fea",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/nav/icon_main_press.png",
+        "iconPath": "images/nav/icon_main.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/nav/icon_fire_press.png",
+        "iconPath": "images/nav/icon_fire.png",
+        "pagePath": "pages/Welfare/index",
+        "text": "福利中心"
+      },
+      {
+        "selectedIconPath": "images/nav/icon_mine_press.png",
+        "iconPath": "images/nav/icon_mine.png",
+        "pagePath": "pages/mine/mine",
+        "text": "在线检测"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "sbtn": "/pages/component/index"
+  }
+}

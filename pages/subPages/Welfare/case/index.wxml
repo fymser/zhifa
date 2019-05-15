@@ -1,0 +1,6 @@
+<!--pages/subPages/Welfare/case/index.wxml-->
+<view class='container'>
+  <image wx:for="{{imgList}}" src='{{item.imgSrc}}' catchtap='getPhone' bindload="imageLoad" data-index="{{index}}" style="width:{{ images[index].width-10 }}rpx; height:{{ images[index].height }}rpx;"></image>
+  <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class='getphonenumber'></button>
+</view>
+

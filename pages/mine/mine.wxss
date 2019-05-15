@@ -1,0 +1,193 @@
+/**index.wxss**/
+.content{
+  padding: 25rpx 40rpx 0
+}
+.banner{
+  width: 100%
+}
+.banner image{
+  width: 100%;
+}
+
+.notice_wrap{
+  position: relative;
+  padding: 0 0 0 100rpx;
+  background: #fff
+}
+.notice{
+  height: 100rpx
+}
+.notice_icon{
+  width: 55rpx;
+  position: absolute;
+  left: 30rpx;
+  top: 22rpx
+}
+.notice_item{
+  line-height: 100rpx;
+  font-size: 36rpx
+}
+
+.notice_item text{
+  color: #009cd0
+}
+
+.wrap{
+  margin: 10rpx 0 0;
+  background: #fff
+}
+.nav-bat{
+  border-bottom: 3rpx solid #f0f0f0;
+}
+.nav{
+  float: left;
+  width: 25%;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 100rpx;
+  position: relative;
+  color: #292929
+}
+.nav.active::after{
+  content: '';
+  display: block;
+  width: 4em;
+  height: 3rpx;
+  background: #282828;
+  position: absolute;
+  left: 50%;
+  bottom: -3rpx;
+  transform: translateX(-50%)
+}
+
+.item_wrap{
+  padding: 0 0 30rpx
+}
+.discount{
+  color: #7c7c7c;
+  font-size: 28rpx;
+  padding: 20rpx 180rpx 20rpx 20rpx;
+  position: relative;
+  line-height: 50rpx;
+  border-bottom: 3rpx solid #f0f0f0
+}
+.get_btn{
+  display: inline-block;
+  background: #009cd0;
+  color: #fff;
+  position: absolute;
+  right: 20rpx;
+  font-size: 26rpx;
+  top: 50%;
+  transform: translateY(-50%)
+}
+.tips{
+  padding: 20rpx;
+  font-size: 22rpx;
+  border-bottom: 3rpx solid #f0f0f0
+}
+.tips view{
+  background: #f9f9f9;
+  color: #9a9a9a;
+  text-align: center;
+  line-height: 2.5em
+}
+
+.consult_btn{
+  background: #009cd0;
+  color: #fff;
+  font-size: 30rpx;
+  padding: 10rpx 0;
+  margin: 20rpx 0 0
+}
+
+.yh_info view{
+  font-size: 25rpx;
+  color: #9a9a9a;
+  text-indent: 2em;
+  line-height:40rpx;
+  padding: 20rpx
+}
+.yh_info image{
+  width: 100%
+}
+
+.doctor_item{
+  margin: 0 20rpx;
+  padding: 20rpx 0 20rpx 150rpx;
+  position: relative;
+  border-bottom: 1px solid #e8e8e8
+}
+.doctor_item:nth-last-child(1){
+  border: none
+}
+.pic{
+  width: 130rpx;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.doctor_item view{
+  padding: 5rpx 0
+}
+.age,
+.t{
+  font-size: 30rpx;
+  color: #292929
+}
+.serve{
+  color: #838383;
+  font-size: 28rpx
+}
+.quality{
+  font-size: 30rpx;
+  color: #292929;
+}
+.quality text{
+  color: #ff0000
+}
+
+.section{
+  position: relative;
+  padding: 15rpx 15rpx 15rpx 35%;
+  font-size: 30rpx
+}
+.section__title{
+  position: absolute;
+  width: 35%;
+  left: 0;
+  color: #838383;
+  line-height: 60rpx
+}
+.section__title image{
+  /* position: absolute; */
+  width: 40rpx;
+  float: left;
+  margin:  10rpx
+}
+.picker,
+.text{
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #666666;
+  background: #f7f7f7;
+  padding: 0 15px;
+  border-radius: 10rpx;
+  
+}
+.picker{
+  display: inline-block
+}
+.picker image{
+  width: 95rpx;
+  float: right
+}
+
+.sub_btn{
+  border: none;
+  margin: 20rpx 30rpx 0;
+  font-size: 28rpx;
+  color: #666666
+}

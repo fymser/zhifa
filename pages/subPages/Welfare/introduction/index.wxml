@@ -1,0 +1,8 @@
+<!--pages/subPages/Welfare/introduction/index.wxml-->
+<view class="container" style='height:{{windowHeight}}rpx;background: #67a3fb;'>
+  <!-- <view class="pageH5">
+    <web-view src="https://hb.zhifa08.com/0503/about/235.html"></web-view>
+  </view> -->
+  <image src='{{introSrc}}'  mode="widthFix" ></image>
+</view>
+

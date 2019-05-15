@@ -1,0 +1,19 @@
+/**app.wxss**/
+.clearfix{zoom: 1}
+.clearfix::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both
+}
+page{
+  background: #f7f7f7;
+}
+image{
+  display: block
+}
+.hide{
+  display: none
+}

@@ -1,0 +1,8 @@
+<!--pages/subPages/Welfare/project/index.wxml-->
+<view class="container" style='height:{{windowHeight}}rpx'>
+  <!-- <view class="pageH5">
+    <web-view src="https://hb.zhifa08.com/ningbo0511/index.htm"></web-view>
+  </view> -->
+  <image wx:for="{{imgList}}" src='{{item.imgSrc}}' bindload="imageLoad" data-index="{{index}}" style="width:{{ images[index].width-10 }}rpx; height:{{ images[index].height }}rpx;"  mode="widthFix" ></image>
+</view>
+

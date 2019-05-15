@@ -1,0 +1,6 @@
+<!--logs.wxml-->
+<view class='boxB'>
+  <view wx:for="{{list}}" class="box {{item.name}}" data-src="{{item.go}}"  catchtap='goNext'  data-index='{{index}}'>
+    <text>{{item.txt}}</text>
+  </view>
+</view>

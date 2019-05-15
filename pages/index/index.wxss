@@ -1,0 +1,71 @@
+/**index.wxss**/
+@import "../../lib/style/icon.wxss";
+.box{
+  display: block;
+  width: 630rpx;
+  height: 400rpx;
+  margin: 20rpx auto;
+  border-radius: 10px;
+  position: relative;
+}
+.box image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left:0;
+  top:0;
+  z-index: -1;
+}
+.box .up{
+  width: 44rpx;
+  position: absolute;
+  right:34rpx;
+  top:190rpx;
+  color: white;
+  text-align: center;
+  z-index: 21;
+}
+/* 右侧点赞 */
+.box .up text{
+  font-size: 22rpx;
+}
+.box .up icon{
+  font-size: 40rpx;
+}
+.box .up .icon_active{
+  color: red;
+}
+/* 蒙层上的文字标题 */
+.box .title{
+  position: absolute;
+  left:30rpx;
+  top:320rpx;
+  color: white;
+  font-size: 24rpx;
+  z-index: 21;
+}
+/* 覆盖到顶部的灰色蒙层 */
+.box .cover{
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  border-radius: 10px;
+}
+.box .cover image{
+  border-radius: 10px;
+
+}
+
+
+/* swiper */
+.container{
+  width: 630rpx;
+  height: 300rpx;
+  margin: 20rpx auto 10rpx;
+  border-radius: 10px;
+}
+.container image{
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}

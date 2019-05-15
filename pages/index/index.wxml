@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<import src ="../template/index.wxml"/>
+<template is="msgItem"/>
+<view>
+  <!-- swiper banner -->
+  <view class="container">
+    <view class="page-body">
+      <view class="page-section page-section-spacing swiper">
+        <swiper indicator-dots="true" autoplay="true" circular="true"  interval="2000" duration="500" catchtap='goProject'>
+          <block wx:for="{{bannerimg}}" wx:key="*this">
+            <swiper-item>
+              <image src='{{item.imgSrc}}'></image>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </view>
+
+  <!-- 图片文章 -->
+  <view class='box' wx:for="{{list}}" wx:key="{{i}}">
+    <!-- 背景图 -->
+    <image src='{{item.img?item.img:"/images/loading.jpg"}}'></image>
+    <!-- 右侧点赞显示 -->
+    <view class='up'>
+      <icon class='iconfont icon-bqxin {{item.active}}' catchtap='onCollectionTap' data-index='{{index}}'></icon>
+      <text>{{item.up}}</text>
+    </view>
+    <!-- 蒙层文字标题 -->
+    <text class='title'>{{item.txt}}</text>
+    <!-- 蒙层 -->
+    <view class='cover' catchtap='goDetails'  data-index='{{index}}'>
+      <image src='../../images/index/cover_view_bg.png'></image>
+    </view>
+  </view>
+</view>

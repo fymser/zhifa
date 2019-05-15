@@ -1,0 +1,30 @@
+.boxB{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.boxB .box{
+  width: 600rpx;
+  height: 180rpx;
+  margin: 20rpx auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36rpx;
+  letter-spacing: 1px;
+  color: #fff;
+  border-radius: 8px;
+}
+.blue{
+   background: linear-gradient(#77ccfa, #6bb2f8,#609cf7);
+}
+.green{
+   background: linear-gradient(#67de96, #60cf90,#58bf8a);
+}
+.yellow{
+   background: linear-gradient(#f5c261, #f2ae5b,#f09b55);
+}
+.purple{
+   background: linear-gradient(#c275f1, #9c78f4,#7c7cf6);
+}

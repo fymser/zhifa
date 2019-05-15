@@ -1,0 +1,8 @@
+<!--pages/subPages/007/0007.wxml-->
+<view>
+  <image wx:for="{{imgList}}" src='{{item.imgSrc}}' bindload="imageLoad" data-index="{{index}}" style="width:{{ images[index].width-10 }}rpx; height:{{ images[index].height }}rpx;"></image>
+</view>
+
+
+<!--公共按钮模板 pages/component/index.wxml-->
+<sbtn></sbtn>

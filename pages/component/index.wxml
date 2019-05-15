@@ -1,0 +1,12 @@
+<!--pages/component/index.wxml-->
+ <!-- 点赞 分享 报名按钮组件 -->
+<view class='boxT'>
+  <view class='btn'>
+    <button bindtap='onCollectionTap' class='{{message.active}}' data-collected='{{message.collected}}'>
+      <icon class="iconfont icon-like"></icon> {{message.isup}}</button>
+    <button open-type='share'>
+      <icon class="iconfont icon-fenxiang"></icon> 分享</button>
+    <button bindtap='goMine'>
+      <icon class="iconfont icon-baoming"></icon> 报名</button>
+  </view>
+</view>
