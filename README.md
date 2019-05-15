@@ -1,12 +1,12 @@
 # 程序员植发优惠
 
-<p align="center"><img src="..yemian.gif" /></p>
+<p align="center"><img src="yemian.gif" /></p>
 
 5月青年专属月，植发优惠活动
 
 通过Star这个项目你可以享受植发的优惠活动：
 
-- 程序员有脱发困扰的¯
+- 程序员有脱发困扰的；
 - 设计师有脱发困扰的；
 - 前端工程师有脱发困扰的；
 
